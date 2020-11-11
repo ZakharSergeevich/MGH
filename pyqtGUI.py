@@ -247,7 +247,10 @@ class VideoThread(QThread):
                     #Works only when box passes under the sensors
                     if (table_dist - box_dist )>1:
                         if contour is not None:
-                            contourList.append(contour)
+                            if len(contourList)<20000:
+                                contourList.append(contour)
+                            else:
+                                contourList = list()
                     else:
                         rectAreas = list()
                         if len(contourList)!=0:
