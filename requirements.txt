@@ -1,0 +1,7 @@
+pyserial
+opencv-python
+numpy
+matplotlib
+argparse
+imutils
+PyQt5
