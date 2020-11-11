@@ -617,7 +617,7 @@ class Adjust(QWidget):
             rect = (self.lb.rect.x(), self.lb.rect.x()+self.lb.rect.width(),self.lb.rect.y(), self.lb.rect.y()+self.lb.rect.height())
         else:
             if self.lb.rect.width() > 0 and self.lb.rect.height() > 0:
-                rect = (self.lb.rect.x(), self.lb.rect.x()+self.lb.rect.width(),self.lb.rect.y(), self.lb.rect.y()+self.lb.rectща.height())
+                rect = (self.lb.rect.x(), self.lb.rect.x()+self.lb.rect.width(),self.lb.rect.y(), self.lb.rect.y()+self.lb.rect.height())
             elif self.lb.rect.width() < 0 and self.lb.rect.height() > 0:
                 rect = (self.lb.rect.x()+self.lb.rect.width(), self.lb.rect.x(),self.lb.rect.y(), self.lb.rect.y()+self.lb.rect.height())
             elif self.lb.rect.width() > 0 and self.lb.rect.height() < 0:
