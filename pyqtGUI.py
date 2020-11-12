@@ -266,6 +266,7 @@ class VideoThread(QThread):
                             size_y_cm_mtx = px_len2/self.px_cm_y
                             H1 = (((box_dist*size_x_cm_mtx)-(self.focal_length_cm*size_x_cm_mtx))/self.focal_length_cm)/(100/100)
                             H2 = ((box_dist*size_y_cm_mtx-self.focal_length_cm*size_y_cm_mtx)/self.focal_length_cm)/(100/100)
+                            """At this point we emit the value of boxes' sizes. May insert QR generator here"""
                             self.change_size_value.emit('S1 = %.2f , S2 = %.2f, H = %d      ' % (H1, H2, (table_dist-box_dist)))
                             contourList = list()
                         
